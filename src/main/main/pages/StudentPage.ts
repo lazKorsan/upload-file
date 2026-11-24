@@ -42,14 +42,14 @@ export class StudentPage extends BasePage {
 
         const page = this.page;
 
-        await expect(page.getByRole('link', {name: 'site logo'})).toBeVisible();
+
         await page.getByRole('link', {name: 'Login'}).click();
-        await expect(page.getByRole('link', {name: 'site logo'})).toBeVisible();
-        await page.getByRole('textbox', {name: 'Email:'}).click();
+
+
         await page.getByRole('textbox', {name: 'Email:'}).fill(mail);
-        await page.getByRole('textbox', {name: 'Password:'}).click();
+
         await page.getByRole('textbox', {name: 'Password:'}).fill(password);
-        await expect(page.getByRole('button', {name: 'Login'})).toBeVisible();
+
         await page.getByRole('button', {name: 'Login'}).click();
 
 

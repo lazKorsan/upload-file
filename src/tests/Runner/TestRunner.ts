@@ -15,8 +15,8 @@ function findProjectRoot(startDir: string): string {
 // process.argv[1] = çalıştırılan dosyanın tam yolu (ESM'de de CJS'de de var)
 const projectRoot = findProjectRoot(path.dirname(path.resolve(process.argv[1])));
 
-const featurePath = 'src/tests/features/Visitor/US004Login.feature';
-const tagName = '@VisitorLogin';
+const featurePath = 'src/tests/features/Student/US001StLoginTest.feature';
+const tagName = '@US001StLoginTestTC01';
 const slowMoMs = 500;
 
 console.log(`🚀 Yavaş mod başlatılıyor (slowMo=${slowMoMs}ms)...\n`);

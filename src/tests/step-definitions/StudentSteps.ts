@@ -16,10 +16,10 @@ Given('Student kullanicisi {string} sayfasina gider', async function (baseUrlKey
 
 Given('Student kullanicisi {string} ve {string} degerleri ile siteye giris yapar', async function (mailKey: string, passwordKey: string) {
 
-    mailKey=process.env[mailKey]!;
+
     const studentPage=new StudentPage(this.page);
     await studentPage.loginWithMwthod(process.env[mailKey]!, process.env[passwordKey]!);
-    LoggerHelper.logInfo(`Student kullanicisi "${mailKey}" ve "***" degerleri ile siteye giris yapti`);
+
 
 
 });
